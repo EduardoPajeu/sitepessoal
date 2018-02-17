@@ -1,0 +1,26 @@
+.div-figure{
+    border: 8px solid black;
+    background-color: #FAFFFC;
+    width: 320px;
+    height: 250px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    padding: 16px;
+    float: right;
+
+}
+
+.figcaption-link{
+	font-size: 20px;
+	color: #851944;
+}
+
+.paragrafo{
+	margin-left: 45px;
+
+}
+
+.fim-div{
+	color: #ffffff;
+
+}

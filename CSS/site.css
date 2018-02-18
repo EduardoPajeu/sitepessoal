@@ -23,9 +23,9 @@ em {
 	text-align: center;
 	background-color: #851944;
 	color: #FFF;
-	padding: 25px;
-	border-bottom: 10px solid black;
-	font-size: 60px;
+	padding: 2rem;
+	border-bottom: .5rem solid black;
+	font-size: 300%;
 	text-transform: uppercase;
 }
 
@@ -61,12 +61,12 @@ p {
     position: relative;
     top: 310px;
     width: 15%;
-    
+
 }
 
 .navegacao-site-title {
-	font-size: 30px;
-	margin-bottom: 25px;
+	font-size: 1.5em;
+	margin-bottom: 1em;
 }
 
 .nav-des-link{
@@ -78,8 +78,8 @@ p {
 }
 
 .icones-redes-sociais a {
-	width: 40px;
-	height: 40px;
+	width: 2em;
+	height: 2em;
 	display: block;
 	text-indent: -99999px;
 }
@@ -102,7 +102,7 @@ p {
 }
 
 .subtitulo-texto {
-	font-size: 30px;
+	font-size: 1.5em;
     clear: both;
 }
 
@@ -119,12 +119,12 @@ p {
 .main-div-container{
 	width: 800px;
 	margin: auto;
-	padding: 30px 0;
+	padding: 1em 0;
 	padding-bottom: 90px;
 }
 
 .div-container-text{
-  width: 430px;
+  width: 50ch;
 }
 
 
@@ -134,11 +134,10 @@ p {
 .footer-page{
 	background-color: #000;
 	color: #F2FFFC;
-    padding: 20px;
+    padding: 1em;
     clear: both;
     position: fixed;
     width: 100%;
     bottom: 0;
     left: 0;
 }
-

@@ -2,6 +2,14 @@
 ********************************/
 .foto-home {
     height: 200px;
+    -webkit-border-radius: 10% 50% / 50% 10%;
+    -moz-border-radius: 10% 50% / 50% 10%;
+    border-radius: 10% 50% / 50% 10%;
+}
+.subtitulo-principal {;
+  text-align: center;
+  font-size: .5em;
+  font-family: Arial, sans-serif;
 }
 .saudacao p {
     font-size: 1.5em;
@@ -9,11 +17,6 @@
     line-height: 1;
     padding: 2em;
 }
-
-.subtitulo-texto p {;
-  text-align: center;
-}
-
 .saudacao-inicio {
     font-size: 3em;
     color: #889;
@@ -22,12 +25,15 @@
     text-align: right;
     display: block;
 }
+.saudacao-ultima-linha em{
+    color: #851944;
+    transform: rotate(-10deg);
+    font-size: 4em;
+    display: inline-block;
+}
 .saudacao strong {
     font-size: 2em;
     color: #000;
-}
-.saudacao em {
-    color: #851944;
 }
 .botao-index {
     font-size: 1.25em;
@@ -49,6 +55,117 @@
     text-shadow: 2px 2px #000;
     text-transform: uppercase;
 }
+
+.etiqueta-home{
+  width: 40%;
+  background-color: #4f186c;
+  border: .1em solid #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform-origin: 0 0;
+  transform: translate(347px, -162px)
+  rotate(42deg);
+  padding: 5px;
+  /* text-align: center; */
+}
+
+.etiqueta-home a{
+  font-size: .6em;
+  font-weight: bold;
+  color: #FFF;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-transform: none; /* Tira qlq tipo de CAPS */
+  text-decoration: none; /* Tira qlq tipo de style(SUB) */
+}
+
+/* PALAVRAS HOME
+*************************/
+
+.palavra-home{
+  position: absolute;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bold;
+  font-size: .6em;
+  color: #D5447E;
+  text-transform: capitalize;
+}
+.palavras-home{
+  perspective: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.eficiencia {
+    top: 20%;
+    left: 75%;
+    transform: translate(-50%, -50%) rotate(20deg) translateZ(50px);
+}
+
+.boas-praticas {
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%) translateZ(50px);
+}
+
+.codigo-limpo {
+    top: 45%;
+    left: 10%;
+    transform: translate(-50%, -50%) rotate(-20deg) translateZ(30px);
+}
+
+.css3 {
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%) rotate(-20deg) translateZ(50px);
+}
+
+.html5 {
+    top: 40%;
+    left: 80%;
+    transform: translate(-50%, -50%) rotate(-20deg) translateZ(50px);
+}
+
+.javascript {
+    top: 10%;
+    left: 60%;
+    transform: translate(-50%, -50%) translateZ(50px);
+}
+
+.acessibilidade {
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%) rotate(10deg) translateZ(50px);
+}
+
+.responsivo {
+    top: 15%;
+    left: 15%;
+    transform: translate(-50%, -50%) rotate(-20deg) translateZ(10px);
+}
+
+.otimizacoes {
+    top: 60%;
+    left: 70%;
+    transform: translate(-50%, -50%) rotate(20deg) translateZ(50px);
+}
+
+.agilidade {
+    top: 10%;
+    left: 30%;
+    transform: translate(50%, 10%) rotate(-20deg) translateZ(70px);
+}
+
+.design {
+    top: 35%;
+    left: 65%;
+    transform: translate(-50%, -50%) rotate(-20deg) translateZ(50px);
+}
+
+/*******************************/
 
 /* PARTE TRABALHOS
 ********************************/
@@ -90,12 +207,25 @@
     padding: .5em;
     display: block;
 }
-
+.blog li a:hover {
+    color: #fa1d0f;
+}
+.blog li{
+    width: 30%;
+}
+.blog .mais-recente {
+  background-color: #F2FFFC;
+}
+.blog .mais-recente a {
+  color: #F26;
+}
 .post{
-  background-color: #FFF;
+  background-color: #F2FFFC;
   position: absolute;
-  color: black;
+  height: 8em;
+  color: #000;
   top: 5em;
+  left: 30%;
   right: 3em;
   padding: 2em;
 }

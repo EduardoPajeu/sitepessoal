@@ -1,37 +1,35 @@
 /* GERAL
 ***************/
+html{
+  font-size: 120%;
+}
+
 body {
-	font-family: "Crimson Text", "Times New Roman", serif;
-	background-color: #F2FFFC;
-	font-size: 120%;
-	line-height: 1.5;
+  font-family: "Crimson Text", "Times New Roman", serif;
+  background-color: #F2FFFC;
+  line-height: 1.5;
 }
 
 h1, h2 {
-	font-family: "Open Sans Condensed", "Arial", sans-serif;
+  font-family: "Open Sans Condensed", "Arial", sans-serif;
 }
 
 strong {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 em {
-	font-style: italic;
+  font-style: italic;
 }
 
 .titulo-principal {
-	text-align: center;
-	background-color: #851944;
-	color: #FFF;
-	padding: 2rem;
-	border-bottom: .5rem solid black;
-	font-size: 300%;
-	text-transform: uppercase;
-}
-
-p {
-	text-align: justify;
-	margin: 20px 0;
+  text-align: center;
+  background-color: #851944;
+  color: #FFF;
+  padding: 2rem;
+  border-bottom: .5rem solid black;
+  font-size: 300%;
+  text-transform: uppercase;
 }
 
 /* CONTAINER
@@ -49,9 +47,9 @@ p {
 }
 
 .navegacao-site {
-	text-align: center;
-	background-color: #3C1D3D;
-	color: #F2FFFC;
+  text-align: center;
+  background-color: #3C1D3D;
+  color: #F2FFFC;
     padding: 20px;
     float: right;
     clear: right;
@@ -65,47 +63,46 @@ p {
 }
 
 .navegacao-site-title {
-	font-size: 1.5em;
-	margin-bottom: 1em;
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }
 
 .nav-des-link{
-	text-transform: lowercase;
+  text-transform: lowercase;
 }
 
 .icones-redes-sociais li {
-	display: inline-block;
+  display: inline-block;
 }
 
 .icones-redes-sociais a {
-	width: 2em;
-	height: 2em;
-	display: block;
-	text-indent: -99999px;
+  width: 2em;
+  height: 2em;
+  display: block;
+  text-indent: -99999px;
 }
 
 .github {
-	background-image: url(../img/github.png);
+  background-image: url(../img/github.png);
 }
 
 .twitter {
-	background-image: url(../img/twitter.png);
+  background-image: url(../img/twitter.png);
 }
 
 .linkedin {
-	background-image: url(../img/linkedin.png);
+  background-image: url(../img/linkedin.png);
 }
 
 .navegacao-site a {
-	color: inherit;
-	font-family: "Open Sans Condensed", sans-serif;
+  color: inherit;
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
-.subtitulo-texto {
-	font-size: 1.5em;
-    clear: both;
+.subtitulo-texto {;
+  font-size: 1.5em;
+  clear: both;
 }
-
 
 .main-container{
     float: left;
@@ -113,14 +110,14 @@ p {
 }
 
 .main-link{
-	color: #851944;
+  color: #851944;
 }
 
 .main-div-container{
-	width: 800px;
-	margin: auto;
-	padding: 1em 0;
-	padding-bottom: 90px;
+  width: 800px;
+  margin: auto;
+  padding: 1em 0;
+  padding-bottom: 90px;
 }
 
 .div-container-text{
@@ -132,8 +129,8 @@ p {
 ***************/
 
 .footer-page{
-	background-color: #000;
-	color: #F2FFFC;
+  background-color: #000;
+  color: #F2FFFC;
     padding: 1em;
     clear: both;
     position: fixed;

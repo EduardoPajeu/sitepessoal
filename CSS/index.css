@@ -1,11 +1,21 @@
+/* PARTE INICIAL
+********************************/
 .foto-home {
-    height: 5em;
+    height: 200px;
 }
 .saudacao p {
+    font-size: 1.5em;
     color: #99A;
-    line-height: 1em;
+    line-height: 1;
+    padding: 2em;
 }
+
+.subtitulo-texto p {;
+  text-align: center;
+}
+
 .saudacao-inicio {
+    font-size: 3em;
     color: #889;
 }
 .saudacao-ultima-linha {
@@ -13,22 +23,35 @@
     display: block;
 }
 .saudacao strong {
+    font-size: 2em;
     color: #000;
 }
 .saudacao em {
     color: #851944;
 }
 .botao-index {
+    font-size: 1.25em;
     background-color: #851944;
     color: #FFF;
+    padding: .5em;
     border: .2em solid black;
-    width: 30ch;
+    width: 40ch;
+    margin: 2em auto;
     display: block;
     text-align: center;
 }
+.secao-inicio  {
+    padding: 2em;
+}
+
 .secao-inicio h2 {
+    font-size: 3em;
+    text-shadow: 2px 2px #000;
     text-transform: uppercase;
 }
+
+/* PARTE TRABALHOS
+********************************/
 .trabalhos {
     background-color: #3C1D3D;
     border-top: .5em solid #000;
@@ -49,17 +72,41 @@
     width: 100%;
     display: block;
 }
+
+/* PARTE BLOG
+********************************/
 .blog {
+    position: relative;
     background-color: #999;
     color: #FFF;
     border-bottom: .5em solid #851944;
 }
+.blog small {
+    position: relative;
+    top: -1em;
+}
 .blog li a {
     color: #FCF;
+    padding: .5em;
+    display: block;
 }
+
+.post{
+  background-color: #FFF;
+  position: absolute;
+  color: black;
+  top: 5em;
+  right: 3em;
+  padding: 2em;
+}
+
 footer {
     background-color: #000;
     color: #FFF;
+    padding: 2em;
+}
+footer h2{
+    font-size: 3em;
 }
 footer a {
     color: #F99;

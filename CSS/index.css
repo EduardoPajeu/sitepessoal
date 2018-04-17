@@ -5,11 +5,14 @@
     -webkit-border-radius: 10% 50% / 50% 10%;
     -moz-border-radius: 10% 50% / 50% 10%;
     border-radius: 10% 50% / 50% 10%;
+    box-shadow: 0 0 1em #000; /* O 1em é para deixar a cor um pouco difusa */
+    
 }
 .subtitulo-principal {
   text-align: center;
   font-size: .5em;
   font-family: Arial, sans-serif;
+  text-shadow: 2px 2px #000;
 }
 .saudacao p {
     font-size: 1.5em;
@@ -45,6 +48,9 @@
     margin: 2em auto;
     display: block;
     text-align: center;
+    box-shadow: 0 0 1em #000, inset 0 0 1em #FFF
+    /* Efeito de várias bordas */
+    /* box-shadow: 0 0 0 5px #093bdd, 0 0 0 10px #851944, 0 0 0 15px #093bdd, 0 0 0 20px #851944; */
 }
 .secao-inicio  {
     padding: 2em;
@@ -52,7 +58,7 @@
 
 .secao-inicio h2 {
     font-size: 3em;
-    text-shadow: 2px 2px #000;
+    text-shadow: 5px 5px #000;
     text-transform: uppercase;
 }
 
@@ -66,8 +72,6 @@
   transform-origin: 0 0;
   transform: translate(347px, -162px)
   rotate(42deg);
-  /* padding: 5px; */
-  /* text-align: center; */
 }
 
 .etiqueta-home a{
@@ -98,6 +102,11 @@ body {
     perspective-origin: 50% 160px;
 }
 
+/*Manter as transformações 3D funcionando nas palavras*/
+.palavras-home, .titulo-principal {
+    transform-style: preserve-3d;
+}
+
 .palavra-home{
   position: absolute;
   font-family: "Shadows Into Light", cursive;
@@ -124,6 +133,7 @@ body {
 }
 
 .boas-praticas {
+    opacity: .6;
     top: 70%;
     left: 20%;
     transform: translate(-50%, -50%) translateZ(1px) scale(0.25);
@@ -160,12 +170,14 @@ body {
 }
 
 .responsivo {
+    opacity: .6;
     top: 15%;
     left: 15%;
     transform: translate(-50%, -50%) rotate(-15deg) translateZ(1px) scale(0.25);
 }
 
 .otimizacoes {
+    opacity: .6;
     top: 60%;
     left: 70%;
     transform: translate(-50%, -50%) rotate(15deg) translateZ(1px) scale(0.25);
@@ -197,6 +209,7 @@ body {
 .trabalhos ul {
     overflow: hidden;
     border: .5em solid black;
+    box-shadow: 0 0 2em #000;
 }
 .trabalhos li {
     float: left;

@@ -17,7 +17,11 @@ body {
 h1, h2 {
   font-family: "Open Sans Condensed", "Arial", sans-serif;
 }
-
+h1{
+  text-transform: uppercase;
+  font-size: 1em;
+  text-shadow: 8px 2px #000;
+}
 strong {
   font-weight: bold;
 }
@@ -103,7 +107,7 @@ em {
   font-family: "Open Sans Condensed", sans-serif;
 }
 
-.subtitulo-texto {;
+.subtitulo-texto {
   font-size: 1.5em;
   clear: both;
 }
@@ -133,7 +137,7 @@ em {
 ***************/
 
 .footer-page{
-  background-color: #000;
+  background-color: rgba(0, 0, 0, .3);
   color: #F2FFFC;
     padding: 1em;
     clear: both;

@@ -1,10 +1,11 @@
 /* GERAL
 ***************/
-html{
+
+html {
   font-size: 120%;
 }
 
-header{
+header {
   position: relative;
 }
 
@@ -14,14 +15,17 @@ body {
   line-height: 1.5;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Open Sans Condensed", "Arial", sans-serif;
 }
-h1{
+
+h1 {
   text-transform: uppercase;
   font-size: 1em;
   text-shadow: 8px 2px #000;
 }
+
 strong {
   font-weight: bold;
 }
@@ -43,31 +47,30 @@ em {
 /* CONTAINER
 ***************/
 
-.minha-foto{
-    float: right;
-    /*width: 15%;*/
-    box-sizing: border-box;
-    border-left: 10px solid #000000;
-    border-bottom: 10px solid #000000;
-    position: absolute;
-    top: 0;
-    right: 0;
+.minha-foto {
+  float: right;
+  /*width: 15%;*/
+  box-sizing: border-box;
+  border-left: 10px solid #000000;
+  border-bottom: 10px solid #000000;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .navegacao-site {
   text-align: center;
   background-color: #3C1D3D;
   color: #F2FFFC;
-    padding: 20px;
-    float: right;
-    clear: right;
-    box-sizing: border-box;
-    border-left: 10px solid #000000;
-    border-bottom: 10px solid #000000;
-    position: relative;
-    top: 310px;
-    width: 15%;
-
+  padding: 20px;
+  float: right;
+  clear: right;
+  box-sizing: border-box;
+  border-left: 10px solid #000000;
+  border-bottom: 10px solid #000000;
+  position: relative;
+  top: 310px;
+  width: 15%;
 }
 
 .navegacao-site-title {
@@ -75,7 +78,7 @@ em {
   margin-bottom: 1em;
 }
 
-.nav-des-link{
+.nav-des-link {
   text-transform: lowercase;
 }
 
@@ -112,37 +115,40 @@ em {
   clear: both;
 }
 
-.main-container{
-    float: left;
-    width: 85%;
+.main-container {
+  float: left;
+  width: 85%;
 }
 
-.main-link{
+.main-link {
   color: #851944;
 }
 
-.main-div-container{
+.main-div-container {
   width: 800px;
   margin: auto;
   padding: 1em 0;
   padding-bottom: 90px;
 }
 
-.div-container-text{
+.div-container-text {
   width: 50ch;
 }
-
 
 /* FOOTER
 ***************/
 
-.footer-page{
-  background-color: rgba(0, 0, 0, .3);
+.footer-page {
+  /* background-color: rgba(0, 0, 0, .3); */
+  background-image: radial-gradient(ellipse at left bottom, 
+  rgba(60, 29, 61, 0.8), rgba(60, 29, 61, 0.8) 63%, #000 65%, 
+  #000 70%, transparent 71%, transparent);
+  background-size: 25% 100%;
+  background-repeat: no-repeat;
   color: #F2FFFC;
-    padding: 1em;
-    clear: both;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
+  padding: 1em;
+  clear: both;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }

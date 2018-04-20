@@ -1,43 +1,51 @@
 /* PARTE INICIAL
 ********************************/
+
 .foto-home {
     height: 200px;
     -webkit-border-radius: 10% 50% / 50% 10%;
     -moz-border-radius: 10% 50% / 50% 10%;
     border-radius: 10% 50% / 50% 10%;
-    box-shadow: 0 0 1em #000; /* O 1em é para deixar a cor um pouco difusa */
-    
+    box-shadow: 0 0 1em #000;
+    /* O 1em é para deixar a cor um pouco difusa */
 }
+
 .subtitulo-principal {
-  text-align: center;
-  font-size: .5em;
-  font-family: Arial, sans-serif;
-  text-shadow: 2px 2px #000;
+    text-align: center;
+    font-size: .5em;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px #000;
 }
+
 .saudacao p {
     font-size: 1.5em;
     color: #99A;
     line-height: 1;
     padding: 2em;
 }
+
 .saudacao-inicio {
     font-size: 3em;
     color: #889;
 }
+
 .saudacao-ultima-linha {
     text-align: right;
     display: block;
 }
-.saudacao-ultima-linha em{
+
+.saudacao-ultima-linha em {
     color: #851944;
     transform: rotate(-10deg);
     font-size: 4em;
     display: inline-block;
 }
+
 .saudacao strong {
     font-size: 2em;
     color: #000;
 }
+
 .botao-index {
     font-size: 1.25em;
     background-color: #851944;
@@ -52,7 +60,8 @@
     /* Efeito de várias bordas */
     /* box-shadow: 0 0 0 5px #093bdd, 0 0 0 10px #851944, 0 0 0 15px #093bdd, 0 0 0 20px #851944; */
 }
-.secao-inicio  {
+
+.secao-inicio {
     padding: 2em;
 }
 
@@ -62,25 +71,26 @@
     text-transform: uppercase;
 }
 
-.etiqueta-home{
-  width: 645px;
-  background-color: #4f186c;
-  border: .1em solid #000;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform-origin: 0 0;
-  transform: translate(347px, -162px)
-  rotate(42deg);
+.etiqueta-home {
+    width: 645px;
+    background-color: #4f186c;
+    border: .1em solid #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: 0 0;
+    transform: translate(347px, -162px) rotate(42deg);
 }
 
-.etiqueta-home a{
-  font-size: .6em;
-  font-weight: bold;
-  color: #FFF;
-  font-family: "Open Sans Condensed", sans-serif;
-  text-transform: none; /* Tira qlq tipo de CAPS */
-  text-decoration: none; /* Tira qlq tipo de style(SUB) */
+.etiqueta-home a {
+    font-size: .6em;
+    font-weight: bold;
+    color: #FFF;
+    font-family: "Open Sans Condensed", sans-serif;
+    text-transform: none;
+    /* Tira qlq tipo de CAPS */
+    text-decoration: none;
+    /* Tira qlq tipo de style(SUB) */
 }
 
 /* PALAVRAS HOME
@@ -92,7 +102,8 @@ que passam do tamanho da página*/
 /* O perspective no body e passando o translateZ(1px) 
 em elementos específicos, passa a realizar o efeito de parallax*/
 
-html, body {
+html,
+body {
     height: 100%;
     overflow-x: hidden;
 }
@@ -103,27 +114,31 @@ body {
 }
 
 /*Manter as transformações 3D funcionando nas palavras*/
-.palavras-home, .titulo-principal {
+
+.palavras-home,
+.titulo-principal {
     transform-style: preserve-3d;
 }
 
-.palavra-home{
-  position: absolute;
-  font-family: "Shadows Into Light", cursive;
-  font-weight: bold;
-  font-size: .6em;
-  color: #D5447E;
-  text-transform: capitalize;
+.palavra-home {
+    position: absolute;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    font-size: .6em;
+    color: #D5447E;
+    text-transform: capitalize;
 }
-.palavras-home{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+
+.palavras-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
-.palavras-home li{
-  font-size: 250%;
+
+.palavras-home li {
+    font-size: 250%;
 }
 
 .eficiencia {
@@ -195,26 +210,33 @@ body {
     transform: translate(-50%, -50%) rotate(-5deg) translateZ(1px) scale(0.25);
 }
 
-
 /* PARTE TRABALHOS
 ********************************/
+
 .trabalhos {
-    background-color: #3C1D3D;
+    /* background-color: #3C1D3D; */
+    background-image: linear-gradient(135deg, transparent, transparent 14px, rgba(0, 0, 0, 0.1) 14px, rgba(0, 0, 0, 0.1) 15px, transparent 15px, transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
     border-top: .5em solid #000;
     border-bottom: .5em solid #000;
 }
+
 .trabalhos h2 {
     color: #FFF;
 }
+
 .trabalhos ul {
     overflow: hidden;
     border: .5em solid black;
     box-shadow: 0 0 2em #000;
 }
+
 .trabalhos li {
     float: left;
     width: 33.333%;
 }
+
 .trabalhos img {
     width: 100%;
     display: block;
@@ -222,55 +244,91 @@ body {
 
 /* PARTE BLOG
 ********************************/
+
 .blog {
     position: relative;
-    background-color: #999;
+    background-image: linear-gradient(-135deg, transparent, transparent 14px, rgba(0, 0, 0, 0.1) 14px, rgba(0, 0, 0, 0.1) 15px, transparent 15px, transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
     color: #FFF;
     border-bottom: .5em solid #851944;
 }
+
 .blog small {
     position: relative;
     top: -1em;
 }
+
 .blog li a {
     color: #FCF;
     padding: .5em;
     display: block;
 }
+
 .blog li a:hover {
     color: #fa1d0f;
 }
-.blog li{
+
+.blog li {
     width: 30%;
 }
+
 .blog .mais-recente {
-  background-color: #F2FFFC;
+    background-color: #F2FFFC;
 }
+
 .blog .mais-recente a {
-  color: #F26;
+    color: #F26;
 }
-.post{
-  background-color: #F2FFFC;
-  position: absolute;
-  height: 8em;
-  color: #000;
-  top: 5em;
-  left: 30%;
-  right: 3em;
-  padding: 2em;
+
+.post {
+    background-color: #F2FFFC;
+    position: absolute;
+    height: 8em;
+    color: #000;
+    top: 5em;
+    left: 30%;
+    right: 3em;
+    padding: 2em;
 }
+
+/* CAIXA DE TEXTO (POP-UP)
+**************************/
+
+/* QUANDO FOR USAR O PESPECIVE DEVERÀ SER PASSADO EM
+OUTRO LUGAR E NÂO NO BODY */
+
+.popup {
+    width: 40%;
+    background-color: #FFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    z-index: 999999;
+    box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.75);
+    padding: 10% 3%;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* RODAPÉ
+*********************/
 
 footer {
     background-color: #000;
     color: #FFF;
     padding: 2em;
 }
-footer h2{
+
+footer h2 {
     font-size: 3em;
 }
+
 footer a {
     color: #F99;
 }
+
 main {
     width: 100%;
     padding-bottom: 0;
